@@ -16,7 +16,7 @@ const Index = () => {
       title={'product selector'}
       primaryAction={{
         content: 'Select products',
-        onAction: () => setOpen(true)
+        onAction: () => console.log("clicked")
       }}>
       <ResourcePicker
         resourceType={'Product'}
@@ -31,7 +31,7 @@ const Index = () => {
         <ResourceList
           resourceName={{singular: 'product', plural: 'products'}}
           items={resources}
-          renderItem={}>
+          renderItem={products}>
 
         </ResourceList>
       </Card>
